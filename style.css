@@ -274,3 +274,50 @@ z-index: 0;
     color: #000000;
     font-family: "Inter", sans-serif;
 }
+/* user-feedback-section */
+.main-user-feedback{
+    width: 1140px;
+    margin: 0px auto 120px auto;
+}
+.header{
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    color: #252432;
+    margin-bottom: 50px;
+}
+.user-feedback-section{
+    display: flex;
+    gap: 20px;
+}
+.user-card{
+    background-color: #F2EDED;
+    padding: 24px 24px;
+    width: 366px;
+    border-radius: 14px;
+}
+.star-icon{
+    width: 24px;
+    margin-bottom: 24px;
+}
+.tittle{
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+.sub-tittle1{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.rever-img{
+    display: flex;
+    gap: 10px;
+}
+ .name{
+    font-size: 20px;
+    color: #000000;
+}
+ .date{
+    font-size: 16px;
+    color: #a8a8a8;
+}
