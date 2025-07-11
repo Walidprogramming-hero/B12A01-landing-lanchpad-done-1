@@ -321,3 +321,82 @@ z-index: 0;
     font-size: 16px;
     color: #a8a8a8;
 }
+/* web-flow-section */
+.web-flow-main{
+    width: 1140px;
+    margin: 0 auto 150px auto;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+}
+.web-header{
+    text-align: center;
+    padding: 71px 150px;
+}
+.web-header *{
+    margin-bottom: 20px;
+}
+.web-header h1{
+    font-size: 50px;
+    font-weight: bold;
+     font-family: "Raleway", sans-serif;
+}
+.web-header p{
+    font-size: 16px;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+}
+.livee{
+    padding: 12px 36px;
+    border: transparent;
+    color: #ffff;
+    font-size: 16px;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+}
+.livee::after{
+    content: '';
+    position: absolute;
+    width: 107%;
+    height: 103%;
+    background: #333;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+.livee::before{
+    content: '';
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-image: linear-gradient(45deg,#ff7300,#fff800,#48ff00,#00ffd5,#ff4545,#ff00c8,#ff9054);
+    background-size: 600%;
+    filter: blur(8px);
+    left: -2px;
+    top: -2px;
+    z-index: -1;
+    animation: live 15s linear infinite;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+@keyframes live{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+.livee:hover::before{
+    opacity: 1;
+}
+.livee:active:after{
+    background: transparent;
+}
+.livee:active{
+    color: #000000;
+    font-weight: bold;
+}
+.web img{
+    width: 840px;
+    border-radius: 48px;
+}
